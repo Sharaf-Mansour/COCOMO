@@ -1,4 +1,4 @@
-using KLOC.WebApp;
+using COCOMO;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 
