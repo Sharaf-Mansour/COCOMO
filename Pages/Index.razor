@@ -1,0 +1,130 @@
+﻿@page "/"
+<PageTitle>KLOC Index</PageTitle>
+<center>
+    <div class="container-fluid  ">
+        <div class="row bg-secondary">
+            <div class="col align-self-center  fs-2">
+                Welcome to COCOMO Basic Model Calculator Made by
+                <a href="https://www.linkedin.com/in/sharaf-mansour-4a16941b0" class="link-info" target="_blank">Sharaf El Dean</a>.
+            </div>
+        </div>
+        <div class="row">
+            <div class="col align-self-center  bg-info fs-2 ">
+                <label class="fs-2 w-75 input-group m-2">
+                    @("Please Enter Kilo Line Of Code (KLOC):  ")
+                    <input class="form-control ms-2 w-25 fs-5" type="number" min="0" placeholder="Please Enter Kilo Line Of Code (KLOC)" @bind="KLOC" @bind:event="oninput" />
+                </label>
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col align-self-center  bg-warning fs-2 ">
+                @($"COCOMO Organic Model for {KLOC:0.##} KLOC:")
+            </div>
+        </div>
+        <div class="row">
+            <div class="col align-self-center  bg-warning fs-2 ">
+
+                @($"Organic Effort = {OrganicEffort:0.##} PM")
+            </div>
+        </div>
+        <div class="row">
+            <div class="col align-self-center  bg-warning fs-2 ">
+
+                @($"Organic Tdev   = {OrganicTdev:0.##} PM")
+            </div>
+        </div>
+        <div class="row">
+            <div class="col align-self-center  bg-warning fs-2 ">
+
+                @($"Organic Productivity = {OrganicProductivity:0.##} KLOC/PM")
+            </div>
+        </div>
+        <div class="row">
+            <div class="col align-self-center  bg-warning fs-2 ">
+
+                @($"Organic Average Staff Size = {OrganicAverageStaffSize:0.##} Persons")
+            </div>
+        </div>
+        <div class="row">
+            <div class="col align-self-center  bg-danger fs-2 ">
+
+                @($"COCOMO Semidetached Model for {KLOC:0.##} KLOC:")
+            </div>
+        </div>
+        <div class="row">
+            <div class="col align-self-center  bg-danger fs-2 ">
+
+                @($"Semidetached Effort = {SemidetachedEffort:0.##} PM")
+            </div>
+        </div>
+        <div class="row">
+            <div class="col align-self-center  bg-danger fs-2 ">
+
+                @($"Semidetached Tdev= {SemidetachedTdev:0.##} PM")
+            </div>
+        </div>
+        <div class="row">
+            <div class="col align-self-center  bg-danger fs-2 ">
+
+                @($"Semidatached Productivity = {SemidatachedProductivity:0.##} KLOC/PM")
+            </div>
+        </div>
+        <div class="row">
+            <div class="col align-self-center  bg-danger fs-2 ">
+
+                @($"Semidatached Average Staff Size = {SemidatachedAverageStaffSize:0.##} Persons")
+            </div>
+        </div>
+        <div class="row">
+            <div class="col align-self-center  bg-success fs-2 ">
+
+                @($"COCOMO Embedded Model for {KLOC:0.##} KLOC:")
+            </div>
+        </div>
+        <div class="row">
+            <div class="col align-self-center  bg-success fs-2 ">
+
+                @($"EmbeddedEffort = {EmbeddedEffort:0.##} PM")
+            </div>
+        </div>
+        <div class="row">
+            <div class="col align-self-center  bg-success fs-2 ">
+
+                @($"Embedded Tdev = {EmbeddedTdev:0.##} PM")
+            </div>
+        </div>
+        <div class="row">
+            <div class="col align-self-center  bg-success fs-2 ">
+
+                @($"Embedded Productivity = {EmbeddedProductivity:0.##} KLOC/PM")
+            </div>
+        </div>
+        <div class="row">
+            <div class="col align-self-center  bg-success fs-2 ">
+
+                @($"Embedded Average Staff Size = {EmbeddedAverageStaffSize:0.##} Persons")
+            </div>
+        </div>
+    </div>
+</center>
+@code {
+    private double _kloc;
+    double KLOC
+    {
+        get => _kloc;
+        set => _kloc = value > 0 ? value : 0;
+    }
+
+    double OrganicEffort => Pow(KLOC, 1.05) * 2.4;
+    double OrganicTdev => Pow(OrganicEffort, 0.38) * 2.5;
+    double OrganicAverageStaffSize => OrganicEffort / OrganicTdev;
+    double OrganicProductivity => KLOC / OrganicEffort;
+    double SemidetachedEffort => Pow(KLOC, 1.12) * 3;
+    double SemidetachedTdev => Pow(SemidetachedEffort, 0.35) * 2.5;
+    double SemidatachedAverageStaffSize => SemidetachedEffort / SemidetachedTdev;
+    double SemidatachedProductivity => KLOC / SemidetachedEffort;
+    double EmbeddedEffort => Pow(KLOC, 1.2) * 3.6;
+    double EmbeddedTdev => Pow(EmbeddedEffort, 0.32) * 2.5;
+    double EmbeddedAverageStaffSize => EmbeddedEffort / EmbeddedTdev;
+    double EmbeddedProductivity => KLOC / EmbeddedEffort;
+}
