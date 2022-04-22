@@ -7,7 +7,7 @@
   "linkerEnabled": true,
   "resources": {
     "assembly": {
-      "KLOC.WebApp.dll": "sha256-nDYTDGtTY8lTx58rxJCkraNX6cUIwyWOGGepX+xWtgQ=",
+      "KLOC.WebApp.dll": "sha256-BIg7upTnnuJP7fIZNVR1vcTlXy+BC+deKvc1t8naUhM=",
       "Microsoft.AspNetCore.Components.dll": "sha256-bTpefiXZZXz6Mo2LqnEgG9fN8yu5+DtuOU+0RCy3iAk=",
       "Microsoft.AspNetCore.Components.Web.dll": "sha256-A1ALLH7+TOZGlXdgOy2gYziK2f5CCczvJvRwqtKm2gA=",
       "Microsoft.AspNetCore.Components.WebAssembly.dll": "sha256-iM9ltalWFWKFQIKm85NG4CQuy4nSXUhHFqUAnU0fLrE=",
