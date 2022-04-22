@@ -13,12 +13,12 @@
       "url": "_framework\/dotnet.wasm"
     },
     {
-      "hash": "sha256-Sn199NKobWrA38mDtf3oa1nrwQxOQThBy+CtxaimfXw=",
+      "hash": "sha256-8nY2FlR68Qn+Xza0yTDtEcpMAbIXPguyzxkhYr4NVwk=",
       "url": "_framework\/blazor.boot.json"
     },
     {
-      "hash": "sha256-BIg7upTnnuJP7fIZNVR1vcTlXy+BC+deKvc1t8naUhM=",
-      "url": "_framework\/KLOC.WebApp.dll"
+      "hash": "sha256-JU5Eff5swaC9WYNQzM8n3w9s8VurBdHcyva5o2p3Ewo=",
+      "url": "_framework\/COCOMO.dll"
     },
     {
       "hash": "sha256-bTpefiXZZXz6Mo2LqnEgG9fN8yu5+DtuOU+0RCy3iAk=",
@@ -121,8 +121,8 @@
       "url": "_framework\/System.Text.Json.dll"
     },
     {
-      "hash": "sha256-e1tPPuh2MaxFg48qEByysLbgmfGMZBqGf3dvbPc+1Xc=",
-      "url": "KLOC.WebApp.styles.css"
+      "hash": "sha256-51wQxJBRt+Vqie\/MA8P+oQ3RCq0uhgML8YUTGWXgNA4=",
+      "url": "COCOMO.styles.css"
     },
     {
       "hash": "sha256-G37Y\/sLzV8Ak\/IhSYlCIP9LrUg+oihF+ZF8Ytm8eyrk=",
@@ -157,5 +157,5 @@
       "url": "manifest.webmanifest"
     }
   ],
-  "version": "Q\/OVHEKQ"
+  "version": "dANW6WaC"
 };
