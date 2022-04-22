@@ -30,7 +30,7 @@ jobs:
       #- name: Install .NET Core WASM-TOOLS
       #  run: dotnet workload install wasm-tools
       - name: Publish .NET Core Project
-        run: dotnet publish KLOC.WebApp.csproj -c Release -o release --nologo 
+        run: dotnet publish COCOMO.csproj -c Release -o release --nologo 
         
       - name: Change base-tag in index.html from / to COCOMO
         run: sed -i 's/<base href="\/" \/>/<base href="\/COCOMO\/" \/>/g' release/wwwroot/index.html
