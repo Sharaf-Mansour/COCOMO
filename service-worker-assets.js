@@ -13,11 +13,11 @@
       "url": "_framework\/dotnet.wasm"
     },
     {
-      "hash": "sha256-8nY2FlR68Qn+Xza0yTDtEcpMAbIXPguyzxkhYr4NVwk=",
+      "hash": "sha256-Wehw+X96T\/9uQ6mvxeVIP7JLg5bmxHsySBoFe4HXbP0=",
       "url": "_framework\/blazor.boot.json"
     },
     {
-      "hash": "sha256-JU5Eff5swaC9WYNQzM8n3w9s8VurBdHcyva5o2p3Ewo=",
+      "hash": "sha256-r9C1v2xKInuIS6P\/VwPrIVfvMY4VloSvBioZedoao+A=",
       "url": "_framework\/COCOMO.dll"
     },
     {
@@ -157,5 +157,5 @@
       "url": "manifest.webmanifest"
     }
   ],
-  "version": "rf2EKWs1"
+  "version": "98\/ZcyuK"
 };
