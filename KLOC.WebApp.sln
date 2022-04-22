@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32414.318
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KLOC.WebApp", "KLOC.WebApp.csproj", "{03F463E3-6BF6-4293-BF2C-99FE16C9DA2B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{03F463E3-6BF6-4293-BF2C-99FE16C9DA2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03F463E3-6BF6-4293-BF2C-99FE16C9DA2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03F463E3-6BF6-4293-BF2C-99FE16C9DA2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03F463E3-6BF6-4293-BF2C-99FE16C9DA2B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {10A1F2D2-D7EB-4C4F-821E-196108016FD5}
+	EndGlobalSection
+EndGlobal
