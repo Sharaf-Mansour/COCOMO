@@ -24,8 +24,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-dotnet@v1
         with:
-         dotnet-version: '6.0.x'
-         include-prerelease: true
+         dotnet-version: '7.0.x'
     # publishes Blazor project to the release-folder
       #- name: Install .NET Core WASM-TOOLS
       #  run: dotnet workload install wasm-tools
